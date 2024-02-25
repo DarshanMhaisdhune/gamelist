@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import genreReducer from "./GenreSlice";
 import gameListReducer from "./GameListSlice";
 import genreIdReducer from "./GenreIdListSlice";
+import GameId from "./SelectedGameIdSlice";
 
 
 const appStore = configureStore({
@@ -9,6 +10,7 @@ const appStore = configureStore({
         genre: genreReducer,
         gameList: gameListReducer,
         genreById: genreIdReducer,
+        gameId: GameId ,
 
     },
 }) ;
